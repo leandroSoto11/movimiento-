@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ma6a557gvt6i"
-path="res://.godot/imported/caminataM.png-c54f62d43cc636ac93a139f056edfa44.ctex"
+path="res://.godot/imported/caminataM.png-684c55ce69ac53291e8578b71f654ed7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://caminataM.png"
-dest_files=["res://.godot/imported/caminataM.png-c54f62d43cc636ac93a139f056edfa44.ctex"]
+source_file="res://Player/caminataM.png"
+dest_files=["res://.godot/imported/caminataM.png-684c55ce69ac53291e8578b71f654ed7.ctex"]
 
 [params]
 
