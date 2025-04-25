@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var salto_fuerza = 400       # Fuerza hacia arriba al saltar (negativa porque y aumenta hacia abajo)
 @export var saltosMaximos = 2
 
+
 var cantidadSaltos =0;
 
 func _ready() -> void:
@@ -14,10 +15,14 @@ func _physics_process(delta: float) -> void:
 	var direccion = Vector2.ZERO        # Creamos un vector de dirección
 
 	# Movimiento lateral
+	if Input.is_action_just_pressed("Right"):
+		direccion.x += 10
 	if Input.is_action_pressed("Right"): # si apreta la tecla asociada con "Right"
 		direccion.x += 1 #Direccion en el eje x aumenta 1 (1,0)
 		$AnimatedSprite2D.flip_h = false # la animacion no se voltea en el eje horizontal
-	elif Input.is_action_pressed("Left"): # si preciona la tecla asociada con "Left"
+	if Input.is_action_just_pressed("Left"):
+		direccion.x -= 10
+	if Input.is_action_pressed("Left"): # si preciona la tecla asociada con "Left"
 		direccion.x -= 1 #Direccion en el eje x disminuye 1 (-1,0)
 		$AnimatedSprite2D.flip_h = true # la animacion si se voltea en el eje horizontal 
 

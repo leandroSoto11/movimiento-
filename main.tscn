@@ -14,7 +14,10 @@ speed = 200
 salto_fuerza = 300
 
 [node name="Plataforma2" parent="." instance=ExtResource("1_0xm2m")]
-position = Vector2(359, 95)
+position = Vector2(287, 95)
 
 [node name="Plataforma3" parent="." instance=ExtResource("1_0xm2m")]
-position = Vector2(223, 79)
+position = Vector2(194, 95)
+
+[node name="Plataforma4" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(424, 95)
