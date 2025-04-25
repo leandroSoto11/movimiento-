@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdfg450n3p0qb"]
+
+[ext_resource type="PackedScene" uid="uid://dxs10iapdse73" path="res://plataforma.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://csbf7wqim6bba" path="res://Player/player.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node"]
+
+[node name="Plataforma" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(98, 95)
+
+[node name="Player" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(98, 28)
+speed = 200
+salto_fuerza = 300
+
+[node name="Plataforma2" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(359, 95)
+
+[node name="Plataforma3" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(223, 79)
